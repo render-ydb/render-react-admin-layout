@@ -1,6 +1,6 @@
 {
   "name": "@x.render/render-react-admin-layout",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "A layout component for a React-based backend project.",
   "main": "dist/index.js",
   "scripts": {
