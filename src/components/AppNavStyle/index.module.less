@@ -1,0 +1,88 @@
+.root {
+    margin-bottom: 24px;
+    h3{
+        margin-bottom: 12px;
+        color: rgba(0,0,0,.85);
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .container{
+        min-height:42px;
+        display: flex;
+        .nav-style-item{
+            position: relative;
+            width: 44px;
+            height: 36px;
+            margin-right: 16px;
+            overflow: hidden;
+            background-color: #f0f2f5;
+            border-radius: 4px;
+            box-shadow: 0 1px 2.5px 0 rgba(0,0,0,0.18);
+            cursor: pointer;
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 33%;
+                height: 100%;
+                background-color: #fff;
+                content: "";
+            }
+            &::after{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 25%;
+                background-color: #fff;
+                content: "";
+            }
+            & span{
+                display: block;
+                position: absolute;
+                right: 6px;
+                bottom: 4px;
+                color: #1890ff;
+                font-weight: 700;
+                font-size: 14px;
+                pointer-events: none;
+                font-style: normal;
+                text-align: center;
+            }
+            .check-icon-color{
+                color: var(--color);
+            }
+        }
+        .slide-menu-style::before{
+            background-color: #001529;
+            z-index: 1;
+        }
+        .top-menu-style{
+           &::before{
+               display: none;
+           } 
+           &::after{
+               background-color: rgba(0,21,41,.85);
+           }
+        }
+        .blend-menu-style{
+           &::after{
+                background-color: #001529;
+            }
+        }
+       
+    }
+    .nav-setting-list{
+        padding: 0;
+        margin-top: 24px;
+        list-style: none;
+        .nav-setting-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+            color: rgba(0,0,0,.85);
+           
+        }
+    }
+}

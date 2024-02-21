@@ -1,0 +1,33 @@
+.root {
+    height: 100%;
+
+    :global(.ant-menu) {
+        height: 100%;
+    }
+
+    :global(.ant-menu-item) {
+        height: 100%;
+        border-bottom: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    :global(.ant-menu-item>span) {
+        vertical-align: middle;
+    }
+
+    :global(.ant-menu-submenu) {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: none !important;
+    }
+
+
+
+    :global(.ant-menu-submenu-title>span) {
+        vertical-align: middle;
+    }
+}
