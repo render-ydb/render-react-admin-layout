@@ -1,6 +1,6 @@
 {
   "name": "@x.render/render-react-admin-layout",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0",
   "description": "A layout component for a React-based backend project.",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "rollup --config ./rollup.config.js",
     "eslint-fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "prepare": "npx render-lint init  --force",
-    "render-lint-fix": "npm run eslint-fix"
+    "render-lint-fix": "npm run eslint-fix",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git"
